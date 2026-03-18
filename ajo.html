@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abasto Mayorista de Origen - Suministro directo de Chile Guajillo, Ajo Fresco y Jamaica Nigeriana. Sin intermediarios. 100% facturable y trazable.">
-  <meta name="keywords" content="abasto mayorista, chile guajillo, ajo fresco, jamaica nigeriana, suministro agroindustrial México, compra directa origin">
-  <title>Abasto Mayorista de Origen | Grandes volúmenes para grandes negocios</title>
+  <meta name="description" content="Ajo Fresco Calibrado de origen directo. Bulbos compactos, clasificación Super/Extra/Primera. Contratos anuales disponibles.">
+  <meta name="keywords" content="ajo fresco, ajo mexicano, suministro mayorista ajo, ajo calibrado, venta de ajo por tonelada">
+  <title>Ajo Fresco Calibrado | Abasto Mayorista de Origen</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -42,11 +42,10 @@
 </head>
 <body class="smooth-scroll bg-white">
 
-<!-- HEADER STICKY -->
+<!-- HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm" x-data="{ mobileMenu: false }">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
-      <!-- Logo -->
       <a href="index.html" class="flex items-center gap-3">
         <div class="w-10 h-10 bg-agro-green rounded-lg flex items-center justify-center">
           <span class="text-white font-bold text-lg">A</span>
@@ -57,52 +56,45 @@
         </div>
       </a>
       
-      <!-- Desktop Nav -->
       <nav class="hidden lg:flex items-center gap-8">
         <a href="index.html" class="text-sm font-medium text-agro-gray hover:text-agro-green transition">Inicio</a>
-        
-        <!-- Products Dropdown -->
         <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-          <button class="flex items-center gap-1 text-sm font-medium text-agro-gray hover:text-agro-green transition">
+          <button class="flex items-center gap-1 text-sm font-medium text-agro-green">
             Productos
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div x-show="open" x-cloak class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2" x-transition>
             <a href="jamaica.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-agro-green">Jamaica Nigeriana</a>
-            <a href="ajo.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-agro-green">Ajo Fresco Calibrado</a>
+            <a href="ajo.html" class="block px-4 py-2 text-sm text-agro-green font-semibold bg-gray-50">Ajo Fresco Calibrado</a>
             <a href="chile-guajillo.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-agro-green">Chile Guajillo Seco</a>
           </div>
         </div>
-        
         <a href="index.html#nosotros" class="text-sm font-medium text-agro-gray hover:text-agro-green transition">Quiénes Somos</a>
         <a href="contacto.html" class="text-sm font-medium text-agro-gray hover:text-agro-green transition">Contacto</a>
       </nav>
       
-      <!-- CTA Buttons -->
       <div class="hidden lg:flex items-center gap-4">
         <a href="mailto:contacto@abastomayorista.com" class="text-sm text-agro-gray-light hover:text-agro-gray">contacto@abastomayorista.com</a>
         <a href="tel:+5215512345678" class="text-sm font-medium text-agro-gray hover:text-agro-green">+52 1 55 1234 5678</a>
         <a href="https://wa.me/5215512345678" target="_blank" class="bg-agro-green text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-agro-green-dark transition flex items-center gap-2">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp
+          Cotizar
         </a>
       </div>
       
-      <!-- Mobile Menu Button -->
       <button @click="mobileMenu = !mobileMenu" class="lg:hidden p-2">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </div>
   
-  <!-- Mobile Menu -->
   <div x-show="mobileMenu" x-cloak class="lg:hidden bg-white border-t">
     <div class="px-4 py-4 space-y-3">
       <a href="index.html" class="block py-2 text-sm font-medium">Inicio</a>
       <div class="py-2 border-t">
         <p class="text-xs font-semibold text-gray-400 mb-2">PRODUCTOS</p>
         <a href="jamaica.html" class="block py-1.5 text-sm">• Jamaica Nigeriana</a>
-        <a href="ajo.html" class="block py-1.5 text-sm">• Ajo Fresco Calibrado</a>
+        <a href="ajo.html" class="block py-1.5 text-sm text-agro-green font-semibold">• Ajo Fresco Calibrado</a>
         <a href="chile-guajillo.html" class="block py-1.5 text-sm">• Chile Guajillo Seco</a>
       </div>
       <a href="index.html#nosotros" class="block py-2 text-sm font-medium">Quiénes Somos</a>
@@ -112,255 +104,245 @@
   </div>
 </header>
 
-<!-- FLOATING WHATSAPP BUTTON -->
+<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/5215512345678" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110">
   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- HERO SECTION -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-  <!-- Background Image -->
+<!-- HERO PRODUCTO -->
+<section class="relative min-h-[70vh] flex items-center pt-20 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="https://images.unsplash.com/photo-1588515724527-074a7a56616d?w=1920&q=80" alt="Bodega mayorista" class="w-full h-full object-cover">
+    <img src="https://images.unsplash.com/photo-1590005354167-6da97870c757?w=1920&q=80" alt="Ajo Fresco" class="w-full h-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/50"></div>
   </div>
   
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
     <div class="max-w-3xl">
-      <!-- Badge -->
-      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-        <span class="text-sm text-white/90">Suministro directo desde el origen</span>
+      <div class="inline-flex items-center gap-2 bg-agro-red/20 backdrop-blur-sm border border-agro-red/30 rounded-full px-4 py-2 mb-6">
+        <span class="w-2 h-2 bg-agro-red rounded-full animate-pulse"></span>
+        <span class="text-sm text-red-300 font-medium">Más vendido · Premium</span>
       </div>
       
-      <!-- Headline -->
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-        Abastece tu operación con <span class="text-red-400">calidad garantizada</span> y precio fijo todo el año
+        Ajo Fresco Calibrado de <span class="text-red-400">calidad consistente</span>
       </h1>
       
-      <!-- Subheadline -->
-      <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-        Eliminamos intermediarios. Trabajamos directo con productores y importadores. 
-        Contratos anuales con precio fijo, calidad estandarizada lote a lote y entrega en 24-48 horas.
+      <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+        Bulbos compactos, piel firme y clasificación garantizada: Super / Extra / Primera. 
+        Larga vida de anaquel para tu proceso industrial. Mismo producto, lote tras lote.
       </p>
       
-      <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row gap-4 mb-12">
-        <a href="contacto.html" class="inline-flex items-center justify-center gap-2 bg-agro-red text-white px-8 py-4 rounded-lg font-semibold hover:bg-agro-red-dark transition">
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/5215512345678?text=Hola%2C%20cotizar%20Ajo%20Fresco" target="_blank" class="inline-flex items-center justify-center gap-2 bg-agro-red text-white px-8 py-4 rounded-lg font-semibold hover:bg-agro-red-dark transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Cotizar ahora
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
-        <a href="#productos" class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition">
-          Ver productos
+        <a href="#detalles" class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition">
+          Ver detalles
         </a>
-      </div>
-      
-      <!-- Trust Badges -->
-      <div class="flex flex-wrap gap-6 text-sm text-gray-400">
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          <span>100% Facturable y trazable</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <span>Entrega 24-48 horas</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          <span>Contratos anuales</span>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- QUICK STATS -->
-<section class="bg-agro-green py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div>
-        <div class="text-3xl font-bold text-white">3</div>
-        <div class="text-sm text-green-200">Productos clave</div>
-      </div>
-      <div>
-        <div class="text-3xl font-bold text-white">0</div>
-        <div class="text-sm text-green-200">Intermediarios</div>
-      </div>
-      <div>
-        <div class="text-3xl font-bold text-white">100%</div>
-        <div class="text-sm text-green-200">Formal y facturable</div>
-      </div>
-      <div>
-        <div class="text-3xl font-bold text-white">24-48h</div>
-        <div class="text-sm text-green-200">Tiempo de despacho</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- QUIÉNES SOMOS -->
-<section id="nosotros" class="py-20 bg-gray-50">
+<!-- QUÉ ES Y POR QUÉ ES DIFERENTE -->
+<section class="py-20 bg-gray-50" id="detalles">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
         <div class="inline-flex items-center gap-2 text-agro-green font-semibold text-sm mb-4">
           <span class="w-8 h-0.5 bg-agro-green"></span>
-          QUIÉNES SOMOS
+          QUÉ ES Y POR QUÉ ES DIFERENTE
         </div>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Abastecemos a la industria con <span class="text-agro-red">origen garantizado</span>
+          El ajo con <span class="text-agro-red">calibración precisa</span> que tu proceso necesita
         </h2>
         <p class="text-gray-600 mb-6 leading-relaxed">
-          Somos una empresa especializada en la gestión, suministro y distribución masiva de materias primas agrícolas de alta demanda. Operamos con vínculo directo a fuentes de origen, eliminando intermediarios.
+          Nuestro Ajo Fresco Calibrado se diferencia en cada etapa del proceso:
         </p>
-        <p class="text-gray-600 mb-8 leading-relaxed">
-          <strong>Nuestro diferencial:</strong> Cada lote que entregamos tiene la misma calidad que el anterior. Estandarización garantizada. Facturación 100% formal con CFDI. Trazabilidad completa.
-        </p>
-        
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-white p-4 rounded-lg border border-gray-200">
-            <div class="text-2xl font-bold text-agro-green">5+</div>
-            <div class="text-sm text-gray-600">Años en el mercado</div>
-          </div>
-          <div class="bg-white p-4 rounded-lg border border-gray-200">
-            <div class="text-2xl font-bold text-agro-green">100%</div>
-            <div class="text-sm text-gray-600">Clientes satisfechos</div>
-          </div>
-        </div>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-gray-900">Clasificación garantizada</strong>
+              <p class="text-gray-600 text-sm">Super / Extra / Primera. Cada tarima cumple con las mismas especificaciones.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-gray-900">Bulbos compactos</strong>
+              <p class="text-gray-600 text-sm">Sin espacios vacíos, piel firme, sin daños. Listos para procesamiento directo.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-gray-900">Larga vida de anaquel</strong>
+              <p class="text-gray-600 text-sm">Hasta 6 meses en condiciones óptimas. Menos desperdicio, más rentabilidad.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-gray-900">Cajas ventiladas profesionales</strong>
+              <p class="text-gray-600 text-sm">Empaque diseñado para óptima ventilación y conservación durante transporte.</p>
+            </div>
+          </li>
+        </ul>
       </div>
       
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1588515724527-074a7a56616d?w=800&q=80" alt="Bodega industrial" class="rounded-2xl shadow-2xl">
-        <div class="absolute -bottom-6 -left-6 bg-agro-red text-white p-6 rounded-xl">
-          <div class="text-3xl font-bold">0</div>
-          <div class="text-sm">Intermediarios</div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl font-bold text-agro-green mb-2">6 meses</div>
+          <div class="text-gray-600 text-sm">Vida de anaquel</div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl font-bold text-agro-green mb-2">100%</div>
+          <div class="text-gray-600 text-sm">Calibración uniforme</div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl font-bold text-agro-green mb-2">0%</div>
+          <div class="text-gray-600 text-sm">Daños o podridos</div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <div class="text-4xl font-bold text-agro-green mb-2">24-48h</div>
+          <div class="text-gray-600 text-sm">Despacho nacional</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CÓMO LO HACEMOS -->
+<!-- CÓMO LO MANEJAMOS -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">¿Cómo lo hacemos?</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">Un proceso claro y transparente para garantizar calidad en cada entrega</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cómo manejamos tu pedido</h2>
     </div>
     
     <div class="grid md:grid-cols-4 gap-8">
-      <!-- Step 1 -->
       <div class="text-center">
         <div class="w-16 h-16 bg-agro-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl font-bold text-agro-green">1</span>
+          <svg class="w-8 h-8 text-agro-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
-        <h3 class="font-semibold text-gray-900 mb-2">Origen directo</h3>
-        <p class="text-sm text-gray-600">Acceso directo a productores y importadores internacionales</p>
+        <h3 class="font-semibold text-gray-900 mb-2">1. Origen verificado</h3>
+        <p class="text-sm text-gray-600">Proveedores directos de las mejores zonas productoras.</p>
       </div>
       
-      <!-- Step 2 -->
       <div class="text-center">
         <div class="w-16 h-16 bg-agro-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl font-bold text-agro-green">2</span>
+          <svg class="w-8 h-8 text-agro-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
         </div>
-        <h3 class="font-semibold text-gray-900 mb-2">Inspección</h3>
-        <p class="text-sm text-gray-600">Control de calidad estricto por lote con fichas técnicas</p>
+        <h3 class="font-semibold text-gray-900 mb-2">2. Selecciónrigurosa</h3>
+        <p class="text-sm text-gray-600">Inspección manual y calibración por tamaño.</p>
       </div>
       
-      <!-- Step 3 -->
       <div class="text-center">
         <div class="w-16 h-16 bg-agro-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl font-bold text-agro-green">3</span>
+          <svg class="w-8 h-8 text-agro-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
         </div>
-        <h3 class="font-semibold text-gray-900 mb-2">Logística</h3>
-        <p class="text-sm text-gray-600">Despacho en 24-48 horas a cualquier destino nacional</p>
+        <h3 class="font-semibold text-gray-900 mb-2">3. Empaque profesional</h3>
+        <p class="text-sm text-gray-600">Cajas ventiladas de 10kg. Paletizado para transporte.</p>
       </div>
       
-      <!-- Step 4 -->
       <div class="text-center">
         <div class="w-16 h-16 bg-agro-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl font-bold text-agro-green">4</span>
+          <svg class="w-8 h-8 text-agro-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </div>
-        <h3 class="font-semibold text-gray-900 mb-2">Seguimiento</h3>
-        <p class="text-sm text-gray-600">Soporte 24/7 y renovación automática de contratos</p>
+        <h3 class="font-semibold text-gray-900 mb-2">4. Despacho exprés</h3>
+        <p class="text-sm text-gray-600">24-48 horas a cualquier destino en México.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTOS -->
-<section id="productos" class="py-20 bg-gray-50">
+<!-- CÓMO LO VENDEMOS -->
+<section class="py-20 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <div class="inline-flex items-center gap-2 text-agro-green font-semibold text-sm mb-4">
-        <span class="w-8 h-0.5 bg-agro-green"></span>
-        PRODUCTOS
-      </div>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestros productos de origen directo</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">Calidad garantizada, precio fijo y entrega asegurada</p>
-    </div>
-    
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Jamaica -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
-        <div class="relative h-64 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1597326556228-468c324d18dc?w=600&q=80" alt="Jamaica Nigeriana" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-          <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Nigeria Export</div>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <div class="inline-flex items-center gap-2 text-agro-green font-semibold text-sm mb-4">
+          <span class="w-8 h-0.5 bg-agro-green"></span>
+          CÓMO LO VENDEMOS
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Jamaica Nigeriana</h3>
-          <p class="text-gray-600 text-sm mb-4">Hibiscus sabdariffa. Flor entera, alto rendimiento de pigmentación, acidez natural ideal para embotellado industrial.</p>
-          <a href="jamaica.html" class="inline-flex items-center gap-2 text-agro-green font-semibold text-sm hover:gap-3 transition">
-            Ver detalles
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Ajo -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition group border-2 border-agro-green">
-        <div class="relative h-64 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1590005354167-6da97870c757?w=600&q=80" alt="Ajo Fresco" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-          <div class="absolute top-4 left-4 bg-agro-red text-white px-3 py-1 rounded-full text-xs font-semibold">Más vendido</div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Ajo Fresco Calibrado</h3>
-          <p class="text-gray-600 text-sm mb-4">Allium sativum. Bulbos compactos, piel firme, clasificación Super/Extra/Primera. Larga vida de anaquel.</p>
-          <a href="ajo.html" class="inline-flex items-center gap-2 text-agro-green font-semibold text-sm hover:gap-3 transition">
-            Ver detalles
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          Formatos y volúmenes disponibles
+        </h2>
+        
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-gray-200">
+            <h4 class="font-bold text-gray-900 mb-2">Cajas ventiladas</h4>
+            <p class="text-gray-600 text-sm mb-3">10 kg por caja. Optimizadas para conservación.</p>
+            <div class="flex gap-2">
+              <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-medium">Por tarima</span>
+              <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-medium">Por tonelada</span>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl border border-gray-200">
+            <h4 class="font-bold text-gray-900 mb-2">Volumen mínimo</h4>
+            <p class="text-gray-600 text-sm">1 tarima (aprox. 800-1000 kg). Para contratos anuales, precio preferente.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl border border-gray-200">
+            <h4 class="font-bold text-gray-900 mb-2">Clasificaciones disponibles</h4>
+            <p class="text-gray-600 text-sm">Super (calibre 5-6cm), Extra (calibre 4-5cm), Primera (calibre 3-4cm).</p>
+          </div>
         </div>
       </div>
       
-      <!-- Chile Guajillo -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
-        <div class="relative h-64 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80" alt="Chile Guajillo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-          <div class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Nacional</div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Chile Guajillo Seco</h3>
-          <p class="text-gray-600 text-sm mb-4">Capsicum annuum. Coloración roja intensa, textura flexible sin aceites. Bajo índice de rotura.</p>
-          <a href="chile-guajillo.html" class="inline-flex items-center gap-2 text-agro-green font-semibold text-sm hover:gap-3 transition">
-            Ver detalles
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
+      <div class="bg-agro-green rounded-2xl p-8 text-white">
+        <h3 class="text-2xl font-bold mb-6">¿Por qué elegir Ajo de Abasto Mayorista?</h3>
+        
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>Mismo calibre, misma calidad. Siempre.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>Facturación 100% formal con CFDI</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>Contratos anuales con precio fijo</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>Soporte 24/7 vía WhatsApp Business</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>Garantía de calidad: reemplazo sin costo</span>
+          </li>
+        </ul>
+        
+        <a href="https://wa.me/5215512345678?text=Hola%2C%20cotizar%20Ajo%20Fresco%20contrato%20anual" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-agro-green w-full py-4 rounded-lg font-semibold hover:bg-gray-100 transition mt-8">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar contrato anual
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIOS -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Lo que dicen nuestros clientes</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Qué dicen nuestros clientes de Ajo</h2>
     </div>
     
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Testimonial 1 -->
+    <div class="grid md:grid-cols-2 gap-8">
       <div class="bg-gray-50 p-8 rounded-2xl">
         <div class="flex gap-1 mb-4">
           <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -369,7 +351,7 @@
           <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
         </div>
-        <p class="text-gray-600 mb-4">"Proveedor confiable para nuestra cadena. Entrega puntual de 5 toneladas mensuales de Guajillo. Nos eliminaron la variabilidad en el grado de picor que teníamos con proveedores anteriores."</p>
+        <p class="text-gray-600 mb-4">"Proveedor confiable para nuestra cadena. Entrega puntual de 5 toneladas mensuales. Nos eliminaron la variabilidad en calidad que teníamos con proveedores anteriores."</p>
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 bg-agro-green rounded-full flex items-center justify-center text-white font-bold">JM</div>
           <div>
@@ -379,7 +361,6 @@
         </div>
       </div>
       
-      <!-- Testimonial 2 -->
       <div class="bg-gray-50 p-8 rounded-2xl">
         <div class="flex gap-1 mb-4">
           <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -388,26 +369,7 @@
           <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
           <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
         </div>
-        <p class="text-gray-600 mb-4">"La Jamaica Nigeriana tiene el mejor rendimiento de pigmentación que encontramos. Llevamos 3 ciclos anuales y la calidad es idéntica. Facturación impecable."</p>
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-agro-green rounded-full flex items-center justify-center text-white font-bold">RL</div>
-          <div>
-            <div class="font-semibold text-gray-900">Director de Operaciones</div>
-            <div class="text-sm text-gray-500">Planta Embotelladora · Guadalajara</div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Testimonial 3 -->
-      <div class="bg-gray-50 p-8 rounded-2xl">
-        <div class="flex gap-1 mb-4">
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <p class="text-gray-600 mb-4">"Después de 2 años de problemas con proveedores variables, Abasto Mayorista nos dio la estabilidad que necesitábamos. Mismo producto, mismo precio, cada entrega."</p>
+        <p class="text-gray-600 mb-4">"El ajo de Abasto Mayorista tiene la mejor conservación del mercado. Puedo tener inventario hasta 6 meses sin preocupación. Eso me da flexibilidad de compra."</p>
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 bg-agro-green rounded-full flex items-center justify-center text-white font-bold">MG</div>
           <div>
@@ -424,7 +386,7 @@
 <section class="py-20 bg-gray-50">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Preguntas frecuentes sobre Ajo</h2>
     </div>
     
     <div class="space-y-4" x-data="{ selected: null }">
@@ -434,79 +396,47 @@
           <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 1 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div x-show="selected === 1" x-cloak class="px-6 pb-4 text-gray-600">
-          Trabajamos por tarima completa (aprox. 800-1000 kg), tonelada o contenedor completo. Para pedidos menores, podemos sugerirte distribuidores locales.
+          El volumen mínimo es de 1 tarima (aprox. 800-1000 kg). Para contratos anuales recomendamos container completo (18-20 toneladas) para mejores precios.
         </div>
       </div>
       
       <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
         <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Tienen contratos anuales con precio fijo?</span>
+          <span class="font-medium text-gray-900">¿Qué clasificaciones ofrecen?</span>
           <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 2 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div x-show="selected === 2" x-cloak class="px-6 pb-4 text-gray-600">
-          Sí,Ofrecemos contratos anuales con precio fijo garantizado. Esto te protege contra la estacionalidad y volatilidad de precios del mercado.
+          Disponible en tres clasificaciones: Super (calibre 5-6cm), Extra (calibre 4-5cm) y Primera (calibre 3-4cm). Todas con garantía de calidad.
         </div>
       </div>
       
       <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
         <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿En cuánto tiempo reciben el producto después de ordenar?</span>
+          <span class="font-medium text-gray-900">¿Cuánto dura el ajo en condiciones óptimas?</span>
           <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 3 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div x-show="selected === 3" x-cloak class="px-6 pb-4 text-gray-600">
-          Despachos en 24-48 horas en territorio nacional. Para productos de importación (Jamaica), el tiempo depende del tránsito marítimo (15-25 días).
+          Hasta 6 meses en condiciones óptimas (temperatura 0-4°C, humedad 65-70%). Nuestras cajas ventiladas están diseñadas para maximizar la vida útil.
         </div>
       </div>
       
       <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
         <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Qué documentos de calidad ofrecen?</span>
+          <span class="font-medium text-gray-900">¿Puedo obtener una muestra?</span>
           <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 4 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div x-show="selected === 4" x-cloak class="px-6 pb-4 text-gray-600">
-          Cada lote incluye ficha técnica, certificado de análisis, factura CFDI y documentos de origen. Trazabilidad completa del producto.
+          Sí, podemos enviar una muestra de 5-10 kg sin costo para que valides la calidad antes de hacer tu pedido grande.
         </div>
       </div>
       
       <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
         <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Qué pasa si hay un problema con el producto?</span>
+          <span class="font-medium text-gray-900">¿Qué garantías ofrecen?</span>
           <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 5 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div x-show="selected === 5" x-cloak class="px-6 pb-4 text-gray-600">
-          Tenemos garantía de calidad. Si el producto no cumple con las especificaciones, reemplazamos el lote sin costo adicional. Soporte 24/7.
-        </div>
-      </div>
-      
-      <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
-        <button @click="selected !== 6 ? selected = 6 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Hacen envíos a todo México?</span>
-          <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 6 }" flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Hacen envíos a todo México?</span>
-          <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 6 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div x-show="selected === 6" x-cloak class="px-6 pb-4 text-gray-600">
-          Sí, hacemos envíos a todo México.Tenemos alianzas con empresas de transporte confiables para entregas seguras y puntuales.
-        </div>
-      </div>
-      
-      <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
-        <button @click="selected !== 7 ? selected = 7 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Puedo visitar sus instalaciones?</span>
-          <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 7 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div x-show="selected === 7" x-cloak class="px-6 pb-4 text-gray-600">
-          ¡Por supuesto! Coordinamos visitas a nuestras instalaciones para que conoces nuestro proceso y condiciones de almacenamiento.
-        </div>
-      </div>
-      
-      <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
-        <button @click="selected !== 8 ? selected = 8 : selected = null" class="w-full px-6 py-4 text-left flex justify-between items-center">
-          <span class="font-medium text-gray-900">¿Cómo inicio un proceso de cotización?</span>
-          <svg class="w-5 h-5 text-gray-500 transition" :class="{ 'rotate-180': selected === 8 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div x-show="selected === 8" x-cloak class="px-6 pb-4 text-gray-600">
-          Escríbenos por WhatsApp, llámanos o llena el formulario de contacto. En menos de 24 horas te enviamos una cotización personalizada.
+          Garantía de calidad: si el producto no cumple especificaciones, reemplazamos el lote sin costo. Soporte 24/7 por WhatsApp.
         </div>
       </div>
     </div>
@@ -516,15 +446,15 @@
 <!-- CTA FINAL -->
 <section class="py-20 bg-agro-red text-white">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listos para abatecer tu operación?</h2>
-    <p class="text-lg text-red-100 mb-8">Contáctanos hoy y obtén una cotización personalizada</p>
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para asegurar tu suministro de Ajo?</h2>
+    <p class="text-lg text-red-100 mb-8">Escríbenos hoy y recibe tu cotización personalizada</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="https://wa.me/5215512345678?text=Hola%2C%20quiero%20cotizar%20productos%20Abasto%20Mayorista" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-agro-red px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+      <a href="https://wa.me/5215512345678?text=Hola%2C%20cotizar%20Ajo%20Fresco" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-agro-red px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Escribir por WhatsApp
+        Cotizar por WhatsApp
       </a>
-      <a href="contacto.html" class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition">
-        Solicitar cotización
+      <a href="contacto.html?producto=ajo" class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition">
+        Solicitar información
       </a>
     </div>
   </div>
@@ -544,9 +474,8 @@
             <p class="text-xs">de Origen</p>
           </div>
         </div>
-        <p class="text-sm">Grandes volúmenes para grandes negocios. Suministro directo de productos agrícolas.</p>
+        <p class="text-sm">Grandes volúmenes para grandes negocios.</p>
       </div>
-      
       <div>
         <h4 class="text-white font-semibold mb-4">Productos</h4>
         <ul class="space-y-2 text-sm">
@@ -555,7 +484,6 @@
           <li><a href="chile-guajillo.html" class="hover:text-white transition">Chile Guajillo Seco</a></li>
         </ul>
       </div>
-      
       <div>
         <h4 class="text-white font-semibold mb-4">Empresa</h4>
         <ul class="space-y-2 text-sm">
@@ -563,22 +491,14 @@
           <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
         </ul>
       </div>
-      
       <div>
         <h4 class="text-white font-semibold mb-4">Contacto</h4>
         <ul class="space-y-2 text-sm">
-          <li class="flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-            +52 1 55 1234 5678
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            contacto@abastomayorista.com
-          </li>
+          <li>+52 1 55 1234 5678</li>
+          <li>contacto@abastomayorista.com</li>
         </ul>
       </div>
     </div>
-    
     <div class="border-t border-gray-800 pt-8 text-center text-sm">
       <p>&copy; 2026 Abasto Mayorista de Origen. Todos los derechos reservados.</p>
     </div>

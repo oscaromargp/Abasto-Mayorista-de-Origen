@@ -1,99 +1,100 @@
 # Abasto Mayorista de Origen
 
-Landing page B2B para empresa agroindustrial especializada en suministro masivo de productos agrícolas: Chile Guajillo, Ajo Fresco y Jamaica Nigeriana.
+Sitio web multi-página para empresa agroindustrial especializada en suministro masivo de productos agrícolas: Chile Guajillo, Ajo Fresco y Jamaica Nigeriana.
 
 ## 🌐 URL del Proyecto
 
-**GitHub Pages:** `https://TU_USUARIO.github.io/abasto-mayorista/`
+**GitHub Pages:** https://oscaromargp.github.io/Abasto-Mayorista-de-Origen/
 
-*(Reemplaza `TU_USUARIO` con tu nombre de usuario de GitHub)*
-
-## 📋 Descripción
-
-Landing page corporativa estilo "Grostore Agro" con diseño:
-- **Estilo:** Natural Premium Agro - corporativo y profesional
-- **Paleta:** Verde Bosque Oscuro #1C4532 + Naranja Dorado #D97706
-- **Tipografía:** Playfair Display + DM Sans + DM Serif Display
-- **Sections:** Navbar, Hero, About, Productos, CTA Banner, Why Us, Partners, Testimonios, Equipo, Blog, Newsletter, Footer
-
-## 🚀 Deploy Automático
-
-El proyecto está configurado con GitHub Actions para deploy automático:
-1. Cada push a `main` activa el workflow
-2. GitHub Pages se actualiza automáticamente (~2 minutos)
-3. No requiere configuración manual
-
-## 📁 Estructura
+## 📋 Estructura del Sitio
 
 ```
 abasto-mayorista/
-├── index.html          # Página principal
-├── styles.css         # Estilos completos
-├── script.js          # Interacciones JS
-├── README.md         # Este archivo
-├── .gitignore        # Archivos ignorados
+├── index.html              # Landing page principal
+├── jamaica.html            # Página producto: Jamaica Nigeriana
+├── ajo.html                # Página producto: Ajo Fresco Calibrado
+├── chile-guajillo.html     # Página producto: Chile Guajillo Seco
+├── contacto.html           # Página de contacto con formulario n8n
+├── styles.css              # Estilos adicionales (Tailwind vía CDN)
+├── script.js               # Scripts adicionales
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml # Workflow de GitHub Pages
-└── images/            # Imágenes del proyecto
-    ├── hero_bg.jpg
-    ├── about_main.jpg
-    ├── about_secondary.jpg
-    ├── product_guajillo.jpg
-    ├── product_ajo.jpg
-    ├── product_jamaica.jpg
-    ├── why_us.png
-    ├── team_1.jpg - team_4.jpg
-    ├── blog_1.jpg - blog_3.jpg
-    ├── leaf_decor_1.svg
-    ├── leaf_decor_2.svg
-    └── wave_divider.svg
+│       └── deploy.yml      # Workflow de GitHub Pages
+└── README.md               # Este archivo
 ```
 
-## 🖼️ Imágenes Requeridas
+## 🎨 Características del Diseño
 
-Para que el sitio funcione correctamente, necesitas agregar las siguientes imágenes en la carpeta `images/`:
+- **Estilo:** Premium industrial agrícola
+- **Colores:** Verde agrícola (#166534), Rojo oscuro (#9B1C1C), Blanco
+- **Tipografía:** Inter (Google Fonts)
+- **Framework:** Tailwind CSS (vía CDN) + Alpine.js
+- **Totalmente responsive:** Mobile first
 
-1. **hero_bg.jpg** - Background del hero (1920x900px)
-2. **about_main.jpg** - Imagen principal About (600x600px)
-3. **about_secondary.jpg** - Imagen secundaria About (300x300px)
-4. **product_guajillo.jpg** - Card producto Guajillo (600x480px)
-5. **product_ajo.jpg** - Card producto Ajo (600x480px)
-6. **product_jamaica.jpg** - Card producto Jamaica (600x480px)
-7. **why_us.png** - Imagen sección Why Us (500x500px, circular)
-8. **team_1.jpg - team_4.jpg** - Fotos equipo (300x300px)
-9. **blog_1.jpg - blog_3.jpg** - Imágenes blog (400x270px)
-10. **leaf_decor_1.svg, leaf_decor_2.svg, wave_divider.svg** - Elementos decorativos
+## 🔧 Funcionalidades
 
-### Notas sobre imágenes
-- Las imágenes de productos deben ser realistas, estilo food photography
-- Las fotos de equipo deben ser headshots corporativos profesionales
-- Las imágenes del blog deben ser relacionadas con el sector agroindustrial
-- Los SVGs decorativos deben ser minimalistas y en verde
+### Páginas de Producto
+Cada página de producto incluye:
+- Hero específico del producto
+- Sección "Qué es y por qué es diferente"
+- Proceso paso a paso
+- Formatos y volúmenes disponibles
+- Testimonios específicos
+- FAQs detalladas (10 preguntas)
+- CTA final con WhatsApp
 
-## 🔧 Actualizar la Web
+### Formulario de Contacto
+- Integración con n8n webhook (configurable)
+- Validación de campos
+- Mensaje de éxito animado
+- Prellenado de producto desde URL
+
+### Header Sticky
+- idêntico en todas las páginas
+- Menú desplegable de productos
+- Botón flotante de WhatsApp
+- Versión mobile con menú hamburguesa
+
+## 🚀 Deployment
+
+El sitio se deploya automáticamente con GitHub Actions:
+1. Push a la rama `main` activa el workflow
+2. GitHub Pages se actualiza en ~2 minutos
+
+## 📝 Configuración n8n (Contacto)
+
+Para habilitar el formulario de contacto:
+
+1. Crear un workflow en n8n con:
+   - **Webhook** (POST) - recibe los datos del formulario
+   - **Send Email** - envía notificación a tu email
+   - **Respond to Webhook** - devuelve mensaje de éxito
+
+2. Actualizar el endpoint en `contacto.html`:
+   ```javascript
+   // Línea ~50 en contacto.html
+   await fetch('https://TU-DOMINIO-N8N.com/webhook/abasto-contacto', {
+   ```
+
+## 📞 Productos
+
+| Producto | Descripción |
+|----------|-------------|
+| Jamaica Nigeriana | Flor entera, alto rendimiento de pigmentación |
+| Ajo Fresco Calibrado | Bulbos compactos, clasificación garantizada |
+| Chile Guajillo Seco | Coloración roja intensa, bajo índice de rotura |
+
+## 🔄 Actualizar la Web
 
 ```bash
-# 1. Hacer cambios en los archivos
 git add .
 git commit -m "update: descripción del cambio"
 git push origin main
 ```
 
-El sitio se actualiza automáticamente en ~2 minutos.
+## 📄 Licencia
 
-## 📝 Personalización
-
-- **Teléfono:** Editar los enlaces `wa.me/5215512345678` en el HTML
-- **Colores:** Variables CSS en `styles.css`
-- **Textos:** Editar contenido en `index.html`
-
-## 🏷️ Tecnologías
-
-- HTML5 semántico
-- CSS3 moderno (variables, flexbox, grid)
-- Vanilla JavaScript
-- GitHub Pages con GitHub Actions
+&copy; 2026 Abasto Mayorista de Origen. Todos los derechos reservados.
 
 ---
 
