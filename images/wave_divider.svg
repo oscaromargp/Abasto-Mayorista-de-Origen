@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" fill="#1C4532">
+  <path d="M0 30 Q360 60 720 30 Q1080 0 1440 30 L1440 60 L0 60 Z" opacity="0.15"/>
+  <path d="M0 30 Q360 50 720 30 Q1080 10 1440 30 L1440 60 L0 60 Z" opacity="0.1"/>
+  <path d="M0 40 Q360 55 720 40 Q1080 25 1440 40 L1440 60 L0 60 Z" opacity="0.05"/>
+</svg>

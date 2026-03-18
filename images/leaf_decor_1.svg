@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#1C4532" stroke-width="1.5">
+  <path d="M50 10 Q70 30 60 50 Q50 70 50 90" stroke-linecap="round"/>
+  <path d="M50 20 Q30 35 35 50 Q40 65 50 80" stroke-linecap="round"/>
+  <path d="M50 20 Q65 25 70 35 Q75 45 70 55" stroke-linecap="round"/>
+  <path d="M50 35 Q75 40 80 50 Q85 60 75 65" stroke-linecap="round"/>
+  <path d="M50 50 Q70 55 75 65 Q80 75 65 80" stroke-linecap="round"/>
+  <ellipse cx="50" cy="15" rx="3" ry="5" stroke="none" fill="#1C4532"/>
+</svg>
