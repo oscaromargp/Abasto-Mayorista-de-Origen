@@ -1,0 +1,117 @@
+{
+  "name": "Abasto Contacto Form - Email",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "abasto-contacto",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-contacto",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "webhookId": "abasto-contacto"
+    },
+    {
+      "parameters": {
+        "chatId": "526121077805",
+        "text": "=🔔 *Nuevo mensaje de Abasto Mayorista*\n\n*Nombre:* {{ $json.body.nombre }}\n*Empresa:* {{ $json.body.empresa }}\n*Email:* {{ $json.body.email }}\n*Teléfono:* {{ $json.body.telefono }}\n*Producto:* {{ $json.body.producto }}\n\n*Mensaje:*\n{{ $json.body.mensaje }}"
+      },
+      "id": "send-telegram",
+      "name": "Enviar Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [500, 200],
+      "credentials": {
+        "telegramApi": {
+          "id": "cmsIi5dOuqLYQbXM",
+          "name": "t.me/ap2025n8n_bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "email": "oscaromargp@gmail.com",
+        "subject": "=Nuevo Lead de Abasto Mayorista: {{ $json.body.nombre }} - {{ $json.body.empresa }}",
+        "emailHtml": "<h2>🔔 Nuevo mensaje de contacto - Abasto Mayorista de Origen</h2>\n\n<table style='border-collapse: collapse; width: 100%; max-width: 600px;'>\n  <tr style='background-color: #f8f9fa;'>\n    <td style='padding: 12px; border: 1px solid #ddd; font-weight: bold; width: 30%;'>Nombre:</td>\n    <td style='padding: 12px; border: 1px solid #ddd;'>{{ $json.body.nombre }}</td>\n  </tr>\n  <tr>\n    <td style='padding: 12px; border: 1px solid #ddd; font-weight: bold;'>Empresa:</td>\n    <td style='padding: 12px; border: 1px solid #ddd;'>{{ $json.body.empresa }}</td>\n  </tr>\n  <tr style='background-color: #f8f9fa;'>\n    <td style='padding: 12px; border: 1px solid #ddd; font-weight: bold;'>Email:</td>\n    <td style='padding: 12px; border: 1px solid #ddd;'><a href='mailto:{{ $json.body.email }}'>{{ $json.body.email }}</a></td>\n  </tr>\n  <tr>\n    <td style='padding: 12px; border: 1px solid #ddd; font-weight: bold;'>Teléfono:</td>\n    <td style='padding: 12px; border: 1px solid #ddd;'><a href='tel:{{ $json.body.telefono }}'>{{ $json.body.telefono }}</a></td>\n  </tr>\n  <tr style='background-color: #f8f9fa;'>\n    <td style='padding: 12px; border: 1px solid #ddd; font-weight: bold;'>Producto:</td>\n    <td style='padding: 12px; border: 1px solid #ddd;'><strong>{{ $json.body.producto }}</strong></td>\n  </tr>\n</table>\n\n<h3 style='margin-top: 20px;'>Mensaje:</h3>\n<div style='background-color: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #166534;'>\n{{ $json.body.mensaje }}\n</div>\n\n<hr style='margin: 30px 0; border: none; border-top: 1px solid #ddd;'>\n<p style='color: #666; font-size: 12px;'>\n📅 <strong>Fecha:</strong> {{ $now.format('YYYY-MM-DD HH:mm:ss') }}<br>\n🌐 <strong>Fuente:</strong> Formulario web - Abasto Mayorista de Origen\n</p>\n\n<p style='margin-top: 20px;'>\n<a href='https://wa.me/521{{ $json.body.telefono.replace(/[^0-9]/g, '') }}' style='background-color: #166534; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;'>📱 Contactar por WhatsApp</a>\n</p>",
+        "options": {
+          "replyTo": ""
+        }
+      },
+      "id": "send-email",
+      "name": "Enviar Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [500, 400],
+      "credentials": {
+        "gmailApi": {
+          "id": "tu-gmail-credentials-id",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"success\": true,\n  \"message\": \"Gracias por tu mensaje. Te contactaremos en menos de 24 horas.\"\n}"
+      },
+      "id": "respond-success",
+      "name": "Responder Éxito",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [750, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Enviar Telegram",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Enviar Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar Telegram": {
+      "main": [
+        [
+          {
+            "node": "Responder Éxito",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar Email": {
+      "main": [
+        [
+          {
+            "node": "Responder Éxito",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["abasto-mayorista", "contacto", "leads"],
+  "meta": {
+    "templateCredsUsageCount": 1,
+    "templateId": "abasto-contacto-email"
+  }
+}
