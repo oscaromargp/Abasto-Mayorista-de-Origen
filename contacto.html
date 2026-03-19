@@ -126,7 +126,7 @@
             const data = Object.fromEntries(formData.entries());
             
             try {
-              await fetch('https://n8n.zxyw.site/webhook/abasto-contacto', {
+              await fetch('https://n8n.zxyw.site/webhook/abasto-contacto-v2', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)

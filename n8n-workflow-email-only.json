@@ -1,0 +1,151 @@
+{
+  "name": "Abasto Contacto - Email Only",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "abasto-contacto-v2",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-contacto",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300],
+      "webhookId": "abasto-contacto-v2"
+    },
+    {
+      "parameters": {
+        "mode": "resolveDataAllFields",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "nombre",
+              "name": "nombre",
+              "value": "={{ $json.body.nombre }}",
+              "type": "string"
+            },
+            {
+              "id": "empresa",
+              "name": "empresa",
+              "value": "={{ $json.body.empresa }}",
+              "type": "string"
+            },
+            {
+              "id": "email",
+              "name": "email",
+              "value": "={{ $json.body.email }}",
+              "type": "string"
+            },
+            {
+              "id": "telefono",
+              "name": "telefono",
+              "value": "={{ $json.body.telefono }}",
+              "type": "string"
+            },
+            {
+              "id": "producto",
+              "name": "producto",
+              "value": "={{ $json.body.producto }}",
+              "type": "string"
+            },
+            {
+              "id": "mensaje",
+              "name": "mensaje",
+              "value": "={{ $json.body.mensaje }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-data",
+      "name": "Procesar Datos",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.2,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "expression": "=={{ $vars.emailTo }}"
+      },
+      "id": "get-email-to",
+      "name": "Email Destino",
+      "type": "n8n-nodes-base.setNode",
+      "typeVersion": 1,
+      "position": [650, 300],
+      "notesInFlow": true,
+      "notes": "Configura esta variable en Settings > Variables"
+    },
+    {
+      "parameters": {
+        "to": "=oscaromargp@gmail.com",
+        "subject": "=Nuevo Lead: {{ $json.nombre }} ({{ $json.empresa }}) - {{ $json.producto }}",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }\n    .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }\n    .header { background: linear-gradient(135deg, #166534 0%, #124429 100%); color: white; padding: 30px; text-align: center; }\n    .header h1 { margin: 0; font-size: 24px; }\n    .header p { margin: 10px 0 0; opacity: 0.9; }\n    .content { padding: 30px; }\n    .field { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }\n    .field:last-child { border-bottom: none; }\n    .label { color: #166534; font-weight: 600; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }\n    .value { color: #333; font-size: 16px; margin: 0; }\n    .value a { color: #166534; text-decoration: none; }\n    .mensaje-box { background: #f8f9fa; border-left: 4px solid #166534; padding: 15px; border-radius: 5px; margin-top: 20px; }\n    .mensaje-box .label { margin-bottom: 10px; }\n    .cta-section { background: #166534; padding: 25px; text-align: center; }\n    .cta-btn { display: inline-block; background: white; color: #166534; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 5px; }\n    .cta-btn-secondary { background: transparent; border: 2px solid white; color: white; }\n    .footer { background: #1f2937; color: #9ca3af; padding: 20px; text-align: center; font-size: 12px; }\n    .urgency { background: #fef3cd; border: 1px solid #ffc107; color: #856404; padding: 10px 15px; border-radius: 5px; margin-bottom: 20px; font-size: 14px; }\n    .whatsapp-btn { background: #25D366; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px; font-weight: bold; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"header\">\n      <h1>🔔 Nuevo Lead de Abasto Mayorista</h1>\n      <p>Se ha recibido un nuevo mensaje desde tu sitio web</p>\n    </div>\n    \n    <div class=\"content\">\n      <div class=\"urgency\">\n        ⏰ <strong>Prioridad:</strong> Responder en menos de 24 horas para aumentar la probabilidad de cierre\n      </div>\n      \n      <div class=\"field\">\n        <div class=\"label\">👤 Nombre Completo</div>\n        <p class=\"value\">{{ $json.nombre }}</p>\n      </div>\n      \n      <div class=\"field\">\n        <div class=\"label\">🏢 Empresa</div>\n        <p class=\"value\">{{ $json.empresa }}</p>\n      </div>\n      \n      <div class=\"field\">\n        <div class=\"label\">📧 Correo Electrónico</div>\n        <p class=\"value\"><a href=\"mailto:{{ $json.email }}\">{{ $json.email }}</a></p>\n      </div>\n      \n      <div class=\"field\">\n        <div class=\"label\">📞 Teléfono</div>\n        <p class=\"value\"><a href=\"tel:{{ $json.telefono }}\">{{ $json.telefono }}</a></p>\n      </div>\n      \n      <div class=\"field\">\n        <div class=\"label\">📦 Producto de Interés</div>\n        <p class=\"value\"><strong>{{ $json.producto }}</strong></p>\n      </div>\n      \n      <div class=\"mensaje-box\">\n        <div class=\"label\">💬 Mensaje</div>\n        <p class=\"value\">{{ $json.mensaje }}</p>\n      </div>\n      \n      <div style=\"text-align: center; margin-top: 25px;\">\n        <a href=\"https://wa.me/521{{ $json.telefono.replace(/[^0-9]/g, '') }}?text=Hola%20{{ encodeURIComponent($json.nombre) }},%20gracias%20por%20contactarnos\" class=\"whatsapp-btn\">\n          📱 Contactar por WhatsApp\n        </a>\n      </div>\n    </div>\n    \n    <div class=\"cta-section\">\n      <p style=\"color: white; margin: 0 0 15px;\"><strong>Acciones Rápidas</strong></p>\n      <a href=\"https://wa.me/521{{ $json.telefono.replace(/[^0-9]/g, '') }}?text=Hola%20{{ encodeURIComponent($json.nombre) }},%20gracias%20por%20contactarnos\" class=\"cta-btn\">WhatsApp</a>\n      <a href=\"mailto:{{ $json.email }}?subject=Re:%20Contacto%20Abasto%20Mayorista\" class=\"cta-btn cta-btn-secondary\">Email</a>\n    </div>\n    \n    <div class=\"footer\">\n      <p>Este email fue generado automáticamente desde <strong>Abasto Mayorista de Origen</strong></p>\n      <p>📅 {{ $now.format('DD/MM/YYYY HH:mm') }}</p>\n    </div>\n  </div>\n</body>\n</html>",
+        "options": {
+          "replyTo": "",
+          "cc": "",
+          "bcc": ""
+        }
+      },
+      "id": "send-email",
+      "name": "Enviar Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 4.2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"success\": true,\n  \"message\": \"Gracias por tu mensaje. Te contactaremos en menos de 24 horas.\"\n}"
+      },
+      "id": "respond-success",
+      "name": "Responder Éxito",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.2,
+      "position": [1050, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Procesar Datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Procesar Datos": {
+      "main": [
+        [
+          {
+            "node": "Enviar Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar Email": {
+      "main": [
+        [
+          {
+            "node": "Responder Éxito",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["abasto-mayorista", "contacto", "leads", "email"]
+}
