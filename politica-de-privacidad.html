@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidad - Abasto Mayorista de Origen">
+  <title>Política de Privacidad | Abasto Mayorista de Origen</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'agro-red': '#9B1C1C',
+            'agro-green': '#166534',
+            'agro-gray': '#1F2937',
+            'agro-gray-light': '#6B7280',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm" x-data="{ mobileMenu: false }">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-agro-green rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-lg">A</span>
+        </div>
+        <div class="hidden sm:block">
+          <h1 class="text-lg font-bold text-agro-gray">Abasto Mayorista</h1>
+          <p class="text-xs text-agro-gray-light">de Origen</p>
+        </div>
+      </a>
+      
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-medium text-agro-gray hover:text-agro-green transition">Inicio</a>
+        <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+          <button class="flex items-center gap-1 text-sm font-medium text-agro-gray hover:text-agro-green transition">
+            Productos
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div x-show="open" x-cloak class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2" x-transition>
+            <a href="jamaica.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-agro-green">Jamaica Nigeriana</a>
+            <a href="ajo.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-agro-green">Ajo Fresco Calibrado</a>
+            <a href="chile-guajillo.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-agro-green">Chile Guajillo Seco</a>
+          </div>
+        </div>
+        <a href="index.html#nosotros" class="text-sm font-medium text-agro-gray hover:text-agro-green transition">Quiénes Somos</a>
+        <a href="contacto.html" class="text-sm font-medium text-agro-gray hover:text-agro-green transition">Contacto</a>
+      </nav>
+      
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="mailto:oscaromargp@gmail.com" class="text-sm text-agro-gray-light hover:text-agro-gray">oscaromargp@gmail.com</a>
+        <a href="tel:+526121077805" class="text-sm font-medium text-agro-gray hover:text-agro-green">+52 612 107 7805</a>
+        <a href="https://wa.me/526121077805" target="_blank" class="bg-agro-green text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-green-700 transition flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Cotizar
+        </a>
+      </div>
+      
+      <button @click="mobileMenu = !mobileMenu" class="lg:hidden p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  
+  <div x-show="mobileMenu" x-cloak class="lg:hidden bg-white border-t">
+    <div class="px-4 py-4 space-y-3">
+      <a href="index.html" class="block py-2 text-sm font-medium">Inicio</a>
+      <div class="py-2 border-t">
+        <p class="text-xs font-semibold text-gray-400 mb-2">PRODUCTOS</p>
+        <a href="jamaica.html" class="block py-1.5 text-sm">• Jamaica Nigeriana</a>
+        <a href="ajo.html" class="block py-1.5 text-sm">• Ajo Fresco Calibrado</a>
+        <a href="chile-guajillo.html" class="block py-1.5 text-sm">• Chile Guajillo Seco</a>
+      </div>
+      <a href="index.html#nosotros" class="block py-2 text-sm font-medium">Quiénes Somos</a>
+      <a href="contacto.html" class="block py-2 text-sm font-medium">Contacto</a>
+      <a href="https://wa.me/526121077805" target="_blank" class="block w-full text-center bg-agro-green text-white py-3 rounded-lg text-sm font-semibold">Cotizar por WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section class="pt-32 pb-20">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Política de Privacidad</h1>
+      
+      <div class="prose prose-lg text-gray-600 space-y-6">
+        <p>Abasto Mayorista de Origen respeta tu privacidad y está comprometido con la protección de tus datos personales.</p>
+        
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Datos que recolectamos</h2>
+        <p>Recolectamos únicamente la información necesaria para procesar tus cotizaciones y envíos:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Nombre completo</li>
+          <li>Teléfono</li>
+          <li>Email</li>
+          <li>Datos de la empresa</li>
+          <li>Información del pedido (productos, volúmenes, destino)</li>
+        </ul>
+        
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Uso de tus datos</h2>
+        <p>Tus datos se utilizan exclusivamente para:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Procesar cotizaciones y pedidos</li>
+          <li>Comunicarte respecto a tu solicitud</li>
+          <li>Coordinar envíos y entregas</li>
+          <li>Enviar información relevante sobre nuestros servicios</li>
+        </ul>
+        
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Protección de datos</h2>
+        <p>Nunca vendemos, rentamos ni compartimos tus datos personales con terceros. Tus datos están almacenados de forma segura y solo son accesibles por personal autorizado de Abasto Mayorista de Origen.</p>
+        
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Tus derechos</h2>
+        <p>Tienes derecho a:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Acceder a tus datos personales</li>
+          <li>Rectificar datos incorrectos</li>
+          <li>Solicitar la eliminación de tus datos</li>
+          <li>Oponerte al tratamiento de tus datos</li>
+        </ul>
+        
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Contacto</h2>
+        <p>Para ejercer cualquiera de estos derechos o cualquier duda sobre esta política, contactanos en:</p>
+        <p class="font-medium text-gray-900">Email: oscaromargp@gmail.com</p>
+        <p class="font-medium text-gray-900">Teléfono: +52 612 107 7805</p>
+        
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">6. Cumplimiento legal</h2>
+        <p>Cumplimos con la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong> de México.</p>
+        
+        <p class="text-sm text-gray-500 mt-8"><strong>Última actualización:</strong> Marzo 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="border-t border-gray-800 pt-8">
+      <div class="text-center text-sm space-y-2">
+        <p>© 2026 Abasto Mayorista de Origen. Todos los derechos reservados.</p>
+        <p class="text-gray-400">Desarrollado por: <span class="text-white font-medium">OSCAR OMAR Gómez Peña</span> – Emprendedor Tecnológico Digital</p>
+        <p class="text-gray-500">🛠️ Creado con Antigravity, GitHub, n8n, opencode y mucho café.</p>
+        <div class="flex justify-center gap-4 mt-4 text-gray-400">
+          <a href="politica-de-privacidad.html" class="hover:text-white transition">Política de Privacidad</a>
+          <span>|</span>
+          <a href="terminos-y-condiciones.html" class="hover:text-white transition">Términos y Condiciones</a>
+          <span>|</span>
+          <a href="aviso-legal.html" class="hover:text-white transition">Aviso Legal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
