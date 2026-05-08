@@ -241,3 +241,50 @@ El sitio incluye las siguientes páginas legales:
 **Nota:** Este proyecto fue desarrollado y documentado siguiendo las mejores prácticas de desarrollo web y las instrucciones de documentación para proyectos GitHub.
 
 *Para soporte técnico o consultas sobre el sitio, contactar al desarrollador.*
+
+## 💖 Apoya este Proyecto
+
+Si este proyecto te fue útil, considera apoyarlo.
+
+> **Dirección XRP**: `rBthUCndKy3Xbb19Ln4xkZeMwusX9NrYfj`
+
+
+
+## 📬 Contacto
+
+<p align="center">
+  <strong>Oscar Omar Gómez Peña</strong>
+</p>
+
+<p align="center">
+  <a href="https://oscaromargp.github.io/Oscaromargp/">
+    <img src="https://img.shields.io/badge/Portafolio-Visitar-blueviolet?style=for-the-badge" alt="Portafolio"/>
+  </a>
+  <a href="https://github.com/oscaromargp">
+    <img src="https://img.shields.io/badge/GitHub-@oscaromargp-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://wa.me/526121077805">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
+  </a>
+</p>
+
+
+
+## 🙏 Agradecimientos
+
+<p align="center">
+  <br/>
+  <em>
+    "Porque Dios es el que en vosotros produce<br/>
+    así el querer como el hacer,<br/>
+    por su buena voluntad."
+  </em>
+  <br/>
+  <strong>— Filipenses 2:13</strong>
+  <br/><br/>
+  Todo lo que aquí existe nació primero como un deseo en el corazón.<br/>
+  Cada proyecto, cada línea, cada idea que toma forma —<br/>
+  es un regalo de Aquel que nos dio tanto el sueño como la fuerza de alcanzarlo.<br/>
+  <strong>A Dios, toda la gloria.</strong>
+  <br/>
+</p>
